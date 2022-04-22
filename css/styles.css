@@ -3,6 +3,8 @@
 /* Білий:  #ffffff */
 /* Акцентний:  #2196F3 */
 /* Колір фону г-ф #2F303A */
+/* колір  вторичного фону: #F5F4FA */
+/* фон img: #AFB1B8 */
 
 :root {
   --primary-text-color: #757575;
@@ -10,6 +12,8 @@
   --accent-color: #2196f3;
   --text-white-color: #ffffff;
   --background-h-f-color: #2f303a;
+  --background-minor-color: #f5f4fa;
+  --background-color-img: #afb1b8;
 }
 
 body {
@@ -222,7 +226,32 @@ p {
 
 .features-item {
   width: 270px;
-  height: 101px;
+}
+
+.features-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+
+  background-image: url(../images/antenna.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: var(--background-minor-color);
+  border-radius: 4px;
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astonaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .features-list .features-item + .features-item {
@@ -273,7 +302,7 @@ p {
 
 /*  section Наша команда */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-minor-color);
 }
 
 .title-teams {
@@ -322,6 +351,51 @@ p {
 
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* Постоянные клиенты */
+.title-customers {
+  margin-bottom: 50px;
+}
+
+.customers-list {
+  display: flex;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+
+  text-align: center;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  background-color: rgb(201, 227, 231);
+}
+
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.customers-item + .customers-item {
+  margin-left: 30px;
+}
+
+
+.customers-svg {
+  width: 106px;
+  height: 60px;
+  fill: var(--background-color-img);
+
+  
+}
+
+.customers-svg:hover,
+.customers-svg:focus {
+  fill: var(--accent-color);
 }
 
 /* загальні стилі до footera */
