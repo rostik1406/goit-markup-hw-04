@@ -233,6 +233,8 @@ p {
   content: '';
   height: 120px;
 
+  margin-bottom: 30px;
+
   background-image: url(../images/antenna.svg);
   background-size: 70px;
   background-repeat: no-repeat;
@@ -320,7 +322,7 @@ p {
 
 .team-item {
   width: 270px;
-  height: 368px;
+  /* height: 368px; */
 }
 
 .team-container {
@@ -353,6 +355,13 @@ p {
   margin-bottom: 0;
 }
 
+
+
+.icon-network {
+  width: 20px;
+  height: 20px;
+}
+
 /* Постоянные клиенты */
 .title-customers {
   margin-bottom: 50px;
@@ -366,14 +375,13 @@ p {
   width: 170px;
   height: 92px;
 
-  text-align: center;
+  padding: 16px 32px;
 
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-
-  background-color: rgb(201, 227, 231);
 }
+
 
 .customers-item:hover,
 .customers-item:focus {
