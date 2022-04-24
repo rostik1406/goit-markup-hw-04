@@ -314,6 +314,7 @@ p {
 
 .team-list {
   display: flex;
+  background-color: var(--text-white-color);
 }
 
 .team-list .team-item + .team-item {
@@ -352,14 +353,39 @@ p {
   line-height: 1.18;
 
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 
 
+.network-list {
+  display: flex;
+
+  padding-right: 32px;
+  padding-left: 32px;
+  color: #afb1b8;
+  
+}
+
+
+.network-list li +  li {
+  margin-left: 10px;
+}
+
 .icon-network {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  outline: 1px solid red;
+}
+
+.icon-network:hover {
+  fill: var(--accent-color);
+}
+
+.network-item:hover {
+  /* background-color: var(--accent-color); */
 }
 
 /* Постоянные клиенты */
