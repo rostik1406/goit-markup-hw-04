@@ -133,11 +133,15 @@ p {
 
 .auth-nav .link {
   display: block;
+  justify-content: center;
+  align-items: center;
 
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -154,16 +158,12 @@ p {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-
-  align-items: center;
 }
 
 .icon-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-
-  align-items: center;
 }
 
 /* Styles do hero-title  (Блок героя ) */
@@ -253,36 +253,21 @@ p {
   display: flex;
 }
 
-.features-item {
-  width: 270px;
-}
+.icon-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.features-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-
+  padding-top: 25px;
+  padding: 25px 100px;
   margin-bottom: 30px;
 
-  background-image: url(../images/antenna.svg);
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-
   background-color: var(--background-minor-color);
-  border-radius: 4px;
 }
 
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astonaut::before {
-  background-image: url(../images/astronaut.svg);
+.icon-icons {
+  width: 70px;
+  height: 70px;
 }
 
 .features-list .features-item + .features-item {
@@ -567,9 +552,15 @@ p {
 .navigation-list .navigation-button:focus {
   background-color: var(--accent-color);
   color: var(--text-white-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .navigation-button {
+  border: none;
+
+  margin: 0;
   padding: 6px 22px;
 
   background-color: #f5f4fa;
@@ -597,10 +588,18 @@ p {
   height: 404px;
 
   margin: 15px;
+
+  border: 1px solid #eeeeee;
 }
 
 .filter-link {
   color: var(--primary-text-color);
+}
+
+.filter-item:hover,
+.filter-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .filter-container {
